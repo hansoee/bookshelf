@@ -1,0 +1,240 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Open Sans, sans-serif;
+    background-color: #393E46;
+    color: white;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222831;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.input_section > h2 {
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #FFD369;
+    color: #222831;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+.input_section > form > .input > label {
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+    background-color:#222831;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.search_section > h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: #222831;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > svg {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    fill:  white;
+    right: 25%;
+}
+
+.book_shelf > svg:hover {
+    fill:  #C02739;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 4px solid white;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+.book_shelf > h2 {
+    color: white;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    background-color: #222831;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 4px 8px;
+    margin: 0 5px 0 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #519872;
+    font-weight: bolder;
+    color: #222831;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #C02739;
+    font-weight: bold;
+    color: #222831;
+}
+
+
+.iki{
+    display:inline-block; 
+    background:#FFD369; 
+    font-weight: bold;
+    padding:4px; color:#222831;
+    border-radius: 7px;
+    border: #a9a9a9 1px solid;
+}   
+
+.iki:hover{
+
+    cursor: pointer;
+    background: #6395ed;
+}
+
+
+.iki2{
+    display:inline-block; 
+    background:#222831; 
+    padding:4px 7px; color:#FFFFFF;
+    border: #222831 2px;
+    border-radius: 7px;
+
+} 
+
+.iki2:hover{
+
+    cursor: pointer;
+    background: #C02739;
+}
+
+.table1 {
+    margin-top: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:10pt;
+    color: #6E6E6E;
+    border-collapse: collapse;
+}
+ 
+.table1, th, td {
+    border: 1px solid #999;
+    padding: 4px 8px;
+}
