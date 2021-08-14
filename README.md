@@ -2,5 +2,3 @@
 menyimpan progress membaca buku
 
 tugas submission dicoding yang dikembangkan
-
-update readme
