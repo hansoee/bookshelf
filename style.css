@@ -1,17 +1,19 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body, input, button {
+body,
+input,
+button {
     font-family: Open Sans, sans-serif;
-    background-color: #393E46;
+    background-color: #393e46;
     color: white;
 }
 
-input, button {
+input,
+button {
     font-size: 16px;
 }
 
@@ -28,7 +30,6 @@ main {
     width: 80%;
     margin: 0 auto;
     padding: 16px;
-
 }
 
 .input_section {
@@ -48,7 +49,7 @@ main {
 }
 
 .input_section > form > button {
-    background-color: #FFD369;
+    background-color: #ffd369;
     color: #222831;
     border: 0;
     border-radius: 5px;
@@ -69,8 +70,6 @@ main {
     border-radius: 5px;
 }
 
-
-
 .input_section > form > .input > label {
     font-weight: bold;
 }
@@ -86,7 +85,7 @@ main {
     font-weight: lighter;
     text-transform: uppercase;
     color: white;
-    background-color:#222831;
+    background-color: #222831;
     padding: 2px 6px;
     border-radius: 2px;
     font-weight: bold;
@@ -139,12 +138,12 @@ main {
     position: absolute;
     width: 60px;
     height: 70px;
-    fill:  white;
+    fill: white;
     right: 25%;
 }
 
 .book_shelf > svg:hover {
-    fill:  #C02739;
+    fill: #c02739;
     cursor: pointer;
 }
 
@@ -170,7 +169,8 @@ main {
     margin: 10px 0;
 }
 
-.book_shelf > .book_list > .book_item > h3, p {
+.book_shelf > .book_list > .book_item > h3,
+p {
     margin: 8px 0;
 }
 
@@ -189,52 +189,72 @@ main {
 }
 
 .book_shelf > .book_list > .book_item > .action > .red {
-    background-color: #C02739;
+    background-color: #c02739;
     font-weight: bold;
     color: #222831;
 }
 
-
-.iki{
-    display:inline-block; 
-    background:#FFD369; 
+.iki {
+    display: inline-block;
+    background: #ffd369;
     font-weight: bold;
-    padding:4px; color:#222831;
+    padding: 4px;
+    color: #222831;
     border-radius: 7px;
     border: #a9a9a9 1px solid;
-}   
+}
 
-.iki:hover{
-
+.iki:hover {
     cursor: pointer;
     background: #6395ed;
 }
 
-
-.iki2{
-    display:inline-block; 
-    background:#222831; 
-    padding:4px 7px; color:#FFFFFF;
+.iki2 {
+    display: inline-block;
+    background: #222831;
+    padding: 4px 7px;
+    color: #ffffff;
     border: #222831 2px;
     border-radius: 7px;
+}
 
-} 
-
-.iki2:hover{
-
+.iki2:hover {
     cursor: pointer;
-    background: #C02739;
+    background: #c02739;
+}
+
+.iki3 {
+    display: inline-block;
+    background: #ffd369;
+    font-weight: bold;
+    padding: 4px;
+    color: #222831;
+    border: #a9a9a9 1px solid;
 }
 
 .table1 {
     margin-top: 10px;
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size:10pt;
-    color: #6E6E6E;
+    font-size: 10pt;
+    color: #6e6e6e;
     border-collapse: collapse;
 }
- 
-.table1, th, td {
+
+.table1,
+th,
+td {
     border: 1px solid #999;
     padding: 4px 8px;
+}
+
+.highlightx {
+    background-color:#FFFF00; 
+    color:#0000CC;
+    font-weight:bold;
+}
+
+.div_cari {
+    border: 3px solid #999;
+    padding: 10px;
+    border-radius: 15px;
 }
