@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8" />        <!--character encoding that covers almost all of the characters and symbols-->
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />         <!--edge mode shows the highest mode of internet explorer that is available-->
         <title>Bookshelf Apps</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />      <!--to load the google font faster-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
         <script src="script.js"></script>
     </head>
+
     <body>
-        <header class="head_bar">
-            <h1 class="head_bar__title">Bookshelf Apps</h1>
+        <header>
+            <nav>
+                <li><a href="#home" class="logo">Books</a></li>
+                    <div class="nav_content">
+                        <ul>
+                            <li><a href="#mybooks"> My Collections </a></li>
+                            <li><a href="#profile"> My Profile </a></li>
+                        </ul>
+                    </div>
+            </nav>
         </header>
         <main>
-            <section class="input_section">
-                <h2>Masukkan Buku Baru</h2>
-                <form id="inputBook">
-                    <div class="input">
-                        <label for="inputBookTitle">Judul</label>
-                        <input id="inputBookTitle" type="text" autocomplete="OFF" required />
-                    </div>
-                    <div class="input">
-                        <label for="inputBookAuthor">Penulis</label>
-                        <input id="inputBookAuthor" type="text" autocomplete="OFF" required />
-                    </div>
-                    <div class="input">
-                        <label for="inputBookYear">Tahun</label>
-                        <input id="inputBookYear" type="number" onKeyPress="return goodchars(event,'0123456789')" required />
-                    </div>
-                    <div class="input_inline">
-                        <label for="inputBookIsComplete">Selesai dibaca</label>
-                        <input id="inputBookIsComplete" type="checkbox" value="0" />
-                    </div>
-                    <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
-                </form>
-            </section>
-
             <section class="search_section">
-                <h2>Cari Buku</h2>
+                <div class="description">
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut nisi pretium, laoreet arcu at, maximus elit. Vivamus tempus, turpis a tincidunt ultrices, augue ipsum cursus tortor, quis hendrerit augue sapien quis magna.
+                        Integer felis mauris, fermentum nec nunc ut, tempus sagittis sapien. Duis sit amet diam ornare metus aliquam blandit pretium nec odio. 
+                        </p>
+                </div>
                 <form id="searchBook">
-                    <label for="searchBookTitle">
+                    <label for="searchBookTitle">  <!--why use label for topdown navbar?-->
                         <select id="dari">
+                            <option></option>
                             <option value="1">Judul</option>
                             <option value="2">Penulis</option>
                             <option value="3">Tahun</option>
                         </select>
                     </label>
                     <input id="searchBookTitle" autocomplete="OFF" type="text" onkeyup="cari_keyup(event)" />
-                    <button id="searchSubmit" type="submit">Cari</button>
+                    <button id="searchSubmit" type="submit"><img id="search_button" src="assets/search_button.svg" width="30px"></button>
                 </form>
             </section>
 
-            <section class="search_section">
-                <button id="gosok_kabeh" class="iki2" onclick="hapus()">Hapus Semua Data</button>
+            <section class="book_shelf">
+                <h2>Done!</h2>
+
+                <div id="completeBookshelfList" class="book_list"></div>
             </section>
 
             <section class="book_shelf">
-                <h2>Belum selesai dibaca</h2>
+                <h2>Do Not Finished :(</h2>
 
                 <div id="incompleteBookshelfList" class="book_list"></div>
             </section>
 
-            <section class="book_shelf">
-                <h2>Selesai dibaca</h2>
-
-                <div id="completeBookshelfList" class="book_list"></div>
+            <section class="delete_data">
+                <button id="gosok_kabeh" class="iki2" onclick="hapus()"><img id="trash_can" src="assets/trash_can.svg" width="30px"></button>
             </section>
+
+
+            <section class="input_section">
+                <h2>Got a book to read on the weekend?</h2>
+                <form id="inputBook">
+                    <div class="input">
+                        <label for="inputBookTitle">Title</label>
+                        <input id="inputBookTitle" type="text" autocomplete="OFF" required />
+                    </div>
+                    <div class="input">
+                        <label for="inputBookAuthor">Writer</label>
+                        <input id="inputBookAuthor" type="text" autocomplete="OFF" required />
+                    </div>
+                    <div class="input">
+                        <label for="inputBookYear">Year</label>
+                        <input id="inputBookYear" type="number" onKeyPress="return goodchars(event,'0123456789')" required />
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Finished</label>
+                        <input id="inputBookIsComplete" type="checkbox" value="0" />
+                    </div>
+                    <button id="bookSubmit" type="submit">I <span>have not finished </span>this book yet</button>
+                </form>
+            </section>
+
+            
+
+            
 
             <section class="book_shelf">
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" id="svg_gosok" onclick="hapus_bin()" class="svgCorner svg_RT" viewBox="0 0 40 40">
