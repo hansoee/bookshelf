@@ -2,6 +2,10 @@ let books = [];
 var id_u = 0;
 var id_paragrap_cari = 0;
 
+window.addEventListener("scroll", function(){
+    var nav = document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 0);})
+
 window.localStorage.time = new Date().getTime();
 var today = new Date(parseInt(window.localStorage.time));
 var date = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
